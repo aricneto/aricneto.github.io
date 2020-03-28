@@ -22,37 +22,10 @@ Devido a importância deste tão popular amigo (e inimigo) de longa data, a prim
 
 Para este curso, usaramos um tipo de botão muito conhecido e utilizado no mundo da eletrônica, conhecido como tact-switch, ou botão táctil: <img class="image image--xs" src="https://i.imgur.com/JrGoJKK.jpg"/>
 
-## Uma divagação
-
-Em uma tarde de sol, com alguns pássaros a vagar no céu, num sol parcialmente brilhante (talvez brilhante até demais), um grande autor de ficção científica, Arthur C. Clarke, tomou um leve momento de reflexão e postulou a seguinte idéia:
-
-<style>
-  .hero-example--linear-gradient {
-    background-image: linear-gradient(135deg, rgba(61,0,61,0.88) , rgba(30,0,255,0.86)), url("https://i.imgur.com/m90huMV.jpg?1");
-  }
-</style>
-
-<div class="hero hero--center hero--dark hero-example--linear-gradient">
-  <div class="hero__content">
-    <p>Qualquer tecnologia suficientemente avançada é indistinguível da magia</p>
-  </div>
-</div>
-
-É nessa curta frase que todos nós nos inspiramos. De aprendizes a mestres, haverá sempre algo tão incongruente com a realidade, que a explicação mais simples é simplesmente a magia. Certamente, vamos ver muitas magias ao longo do curso, mas aos poucos estas magias se morfarão em realidade. A física é uma coisa estranha, interessante, incrivelmente frustrante às vezes, mas completamente fascinante.
-
-Vamos adotar este espírito. Algumas coisas podem parecer uma caixinha mágica, e é assim que apresentaremos alguns conceitos inicialmente. Mais tarde, vendo-as mais a fundo, veremos que muitas coisas não são tão complicadas como parecem ser!
-
-É completamente normal não entender algum conceito ou componente. Alguns dos circuitos mais simples levaram literalmente centenas de anos para serem descobertos e desenvolvidos, e apenas alguns segundos para serem entendidos!
-{:.info}
-
-Não se desencoraje, estaremos aqui para esclarecer cada passo do processo.
-
-Explodam seus circuitos `(nos simuladores, claro :p)`, façam coisas que nem vocês mesmo entendem, explodam essas coisas tambem, e descubram por que elas exploridam! O maior aprendizado vem das falhas. Estamos aqui para explicar por quê cada coisa funciona ou para de funcionar, pois já manjamos de parte da magia. O resto, porém, fica para vocês inventarem.
-
-## De volta aos botões
+## Introdução
 ### Teoria
 
-O botão táctil é composto por quatro contatos de metal, que entram em curto quando pressionados por um disco condutor.
+O botão táctil é composto por quatro contatos de metal, que se tocam quando pressionados por um disco condutor.
 
 Tipicamente, o botão táctil apresenta dois pares de contatos opostos uns aos outros. Estes contatos estão ligados de tal forma que, internamente, o contato diretamente oposto a ele é, de fato, parte do mesmo terminal. Na direita, podemos ver como estes contatos estão conectados internamente (note que eles não se tocam).
 <div align="center"><img class="image image--xl" src="https://i.imgur.com/ppox02A.png"/></div>
@@ -166,59 +139,11 @@ O LED agora está desligado. Ao apertar o botão, nada muda. Na vida real, poré
 
 De volta a estaca zero. Em um caso, temos um LED permanentemente ligado, em outro, temos um permanentemente desligado.
 
-### Momentos de magia
-
-Para entender o que está acontecendo com esse circuito, vamos antes para uma simples analogia (se prepare):
-
----
-
-Imagine você, sentado no banco do parquinho.  
-No fundo, você avista o famoso Bill Gates andando em sua direção. Bill Gates, ou Bill, como gosto de chama-lo, senta ao seu lado. Depois de um certo inquieto silêncio, Bill vira para você e lhe entrega um pedaço de papel com algo escrito.  
-Bill diz que lhe dará um emprego na Microsoft se você conseguir seguir o seguinte **comando**:
-> Leia o que está escrito no papel em voz alta.  
-
-*"Muito fácil"*, você pensa, enquanto desdobra o papel para ver o que há dentro. Ao revelar o conteúdo do papel, porém, você se depara com o seguinte:
-
-> ȏ̴͔̭̰̩̉ ̷̥̥̝͓̍̾́͜ŗ̵̠̲́̆a̴͖͇͙̱͉͑͋̂ṱ̵̭̳́o̷̥͈͎͂̎ ̶̫̃̃r̵̖̿̋̈́́o̴̯̾̓͝͝ḛ̵͇͇̗̯̈̆͋̔ụ̵̘̞̳̐̕̚͠ ̵̭̭͗͜a̵̲͔̩̱̰̅̈ ̴̩̀̉̈͐͆r̴̦̦̮͒̉͒̔͜͝ò̷͔̺̼̀̉u̸̺̫͇͂p̸͓̯̆͗͗͝͝a̶͍͔͎̍̅̈́͝͠ ̶͇̩̰͛͋̔̏d̴̻̺̝͓̗̒͋͗̔͘ȯ̵̠͚̏ ̵̟͌͝ͅr̷̜͛̇̓̕͠ê̸͕ï̵͈̯͈̳̚ ̷͓̱͇̍͛̈́ͅd̷̡͖͓̗͈̊e̴̢̳̲̲͇̾̌͒͛̑ ̸̧̢̫͚̹͂̀ȓ̵̹̬̳͓o̵̖̊͐̒͘m̵̧̙͈̂͌͘a̷̢̛͎͙͚ 
-
-<div align="center">
-  <img class="image image--xl" src="https://i.imgur.com/5kl8Rh8.png"/>
-</div>
-
-Desesperado para ganhar seu emprego na Microsoft, você imagina que nem mesmo o grande Bill entende o que está escrito naquele papel. Então, claramente, você começa a declamar com toda a confiança o conteúdo presente em tal documento:
->AtrOcAdUcaPacaUSTiDUplIeLASTIFeLIFeROFUGAHiS
-
-Bill olha para você incrédulo.  
-Claramente, isto não é o que ele tinha em mente. Ele pede para dar uma olhada no papel que acabou de entregar para você. De olhos semisserrados, Bill analisa com cuidado o documento. Ele olha novamente para você e diz:
-> Eita rapaz, esqueci de instalar o dicionário na minha impressora
-
-Claramente um dia normal para o famoso ex-CEO da Microsoft.  
-Bill Gates dá uma corridinha para seu escritório, instala uma cópia do Aurélio em sua impressora, imprime novamente o documento, e volta correndo para você, entregando um novo papel. *"Leia novamente"*, diz Bill.
-
-Você dá uma olhada no papel e vê o seguinte:
-> o rato roeu a roupa do rei de roma
-
-O resto é história. Em breve em um cinema próximo de vocês.
-
----
-
-Então, o que quer dizer tudo isso? Perai, Bill Gates ainda tá contratando?
-
-Bom, se toda essa história pareceu extremamente confusa para você, imagine para o pobre Arduino!
-
-O ponto que queremos chegar é que, quando você pede para o Arduino ler um sinal digital através da função digitalRead, ele vai fazer todo o esforço possível para ler qualquer coisa que estiver passando por aquela porta!  
-Qualquer minima radiação, um milésimo sinal de estática, umas ondinhas de rádio.
-{:.info}
-
-Sem mostrar ao Arduino o que você considera como `HIGH` ou `LOW`, você está apenas pedindo pra ele ler qualquer besteira que apareça pelo ar, e interpretar como `0` ou `1`. E, como ele foi programado para obedecer seus comandos, ele irá fazer exatamente isto. No fim, sem um ponto de referência, o pobre senhor Arduino não tem idéia do que falar, e só vai jogando pra você o que ele achar que se classica como `HIGH` ou `LOW`
-
-Porém, se você der pra ele um "dicionário", ou seja, mostrar para ele o que é um sinal `HIGH`, e o que é um sinal `LOW`, ele vai poder usar esse ponto de referência para classificar cada sinal que recebe, e lhe dar uma resposta correta. Então, o que seria esse "dicionário"? Ou melhor, esta referência?
-
 ### O resistor pull-down
 
 Nos experimentos acima, vimos que, ao conectar o GND à um dos terminais do botão, o LED permanece apagado. Porém, ao pressionar o botão, você causa um curto que pode queimar o seu Arduino. Sem o GND, o LED oscila entre ligado e desligado, aleatoriamente.
 
-Notou alguma semelhança com a analogia descrita acima? Quando conectamos o GND diretamente ao pino de leitura do botão, estamos dando uma referência ao Arduino. Uma pequena nota de rodapé que diz para ele: *"Isso aqui significa LOW"*.
+Quando conectamos o GND diretamente ao pino de leitura do botão, estamos dando uma referência ao Arduino. Uma pequena nota de rodapé que diz para ele: *"Isso aqui significa LOW"*.
 
 O problema poderia ser resolvido simplesmente com essa conexão direta do pino ao GND. Porém, lembrando a lei de Ohm:
 
@@ -230,7 +155,7 @@ $$5 = I * 0.1 \: \Omega$$
 
 $$I = 50 \: A$$
 
-Ou seja, 50 amperes estariam passando pelo Arduino[^1]. Para comparação, uma churrasqueira elétrica tipicamente usa apenas 10 amperes (porém com uma voltagem muito maior).  
+Ou seja, 50 amperes estariam passando pelo Arduino[^1]. Para fins de comparação, por uma churrasqueira elétrica tipicamente passa cerca de 10 amperes (porém com uma voltagem muito maior).  
 
 [^1]: Essa corrente, porém, é limitada pela potência da fonte de alimentação usada na placa
 

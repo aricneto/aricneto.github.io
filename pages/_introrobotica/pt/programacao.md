@@ -92,3 +92,11 @@ O primeiro comando mostrado resultará sempre em verdadeiro, enquanto que o segu
 Isso acontece porque a linguagem C interpreta `if (x = 10)` da seguinte forma:  
 10 é atribuído a x (lembre que o símbolo de igual simples é o `operador de atribuição`), então x agora contém 10.  
 Então o comando `if` testa 10, o que sempre resulta `true`, já que qualquer número diferente de zero resulta em `true`. Consequentemente, `if (x = 10)` irá sempre resultar em `true`, o que não é desejável ao se usar um comando `if`. Além disso, a variável x irá receber o valor 10, o que também é indesejado.
+
+
+
+> **Referências:**
+>
+> 1. https://www.arduino.cc/reference/pt/language/structure/control-structure/if/ 
+> 2. https://www.circuitar.com.br/tutoriais/programacao-para-arduino-primeiros-passos/#if  
+> 3. https://www.tinkercad.com/  
