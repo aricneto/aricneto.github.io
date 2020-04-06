@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Um pouco de programação...
+title: Estruturas de controle
 permalink: /introrobotica/pt/programacao
 key: intro-robotica-programacao
 aside:
@@ -9,11 +9,9 @@ sidebar:
   nav: introrobotica
 comments: true
 ---
-# Estruturas de controle
+# If
 
 Imagine que você queira que um LED acenda somente se o ambiente estiver escuro, ou se alguém bater palmas, ou você queira que um robô vire para à direita se ele tiver a uma distância de 10 cm da parede. Para receber a informação do ambiente como distância, luminosidade, som é necessário o uso de sensores (estes serão temas de aulas posteriores). Porém, é necessário que no seu código, dentro do ambiente de programação do Arduino (IDE), sejam usadas algumas estruturas de controle. As estruturas de controle são blocos de instruções que alteram o fluxo de execução do código de um programa. Vamos iniciar nosso estudo com uma das estruturas de controle mais simples, o `if`.
-
-## IF
 
 **Descrição do IF:**  
 **IF** significa **SE**, traduzindo do inglês para o português. O comando **if** verifica uma expressão e, apenas **se** ela for verdadeira, executa um conjunto de comandos, ou seja, ele executa uma lógica do tipo: "**se** isso for verdadeiro, **então** faça aquilo".
