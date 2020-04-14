@@ -15,15 +15,15 @@ introrobotica:
         url:    /introrobotica/pt/intro
       - title:  Estruturas de controle 
         url:    /introrobotica/pt/programacao
-  - title:      Sensores
-    children:
-      - title:  Distância
-        url:    /introrobotica/pt/juGJ6Yk
-  - title:      Programação
-    children:
-      - title:  Funções
-        url:    /introrobotica/pt/R72gnVN
-      - title:  Bibliotecas
-        url:    /introrobotica/pt/Vqw5Smp
+  #- title:      Sensores
+  #  children:
+  #    - title:  Distância
+  #      url:    /introrobotica/pt/juGJ6Yk
+  #- title:      Programação
+  #  children:
+  #    - title:  Funções
+  #      url:    /introrobotica/pt/R72gnVN
+  #    - title:  Bibliotecas
+  #      url:    /introrobotica/pt/Vqw5Smp
       #- title:  Estruturas de controle avançadas
       #  url:    /introrobotica/pt/programacao

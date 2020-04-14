@@ -91,6 +91,14 @@ Isso acontece porque a linguagem C interpreta `if (x = 10)` da seguinte forma:
 10 é atribuído a x (lembre que o símbolo de igual simples é o `operador de atribuição`), então x agora contém 10.  
 Então o comando `if` testa 10, o que sempre resulta `true`, já que qualquer número diferente de zero resulta em `true`. Consequentemente, `if (x = 10)` irá sempre resultar em `true`, o que não é desejável ao se usar um comando `if`. Além disso, a variável x irá receber o valor 10, o que também é indesejado.
 
+**Exercícios**  
+**1a:** Seguindo o exemplo 1, desenvolva um circuito e um código no Tinkercad para acender um LED vermelho quando o valor de determinada variável for maior que 10 e se for menor acenda um LED verde.  
+**1b:** Modifique o programa do exercício 1 adicionando um LED amarelo de forma que ele acenda quando o valor da variável for igual a 10 (mantenha os outros LEDs e condições).  
+{:.warning}
+
+**Desafio:**  
+Baseado no que você aprendeu sobre botões e o uso do “if”, desenvolva um circuito com um LED, um resistor e um botão. O LED só deverá acender se o botão for pressionado (estado HIGH). Para fazer esse desafio, você deverá usar o “if”.
+{:.warning}
 
 
 > **Referências:**
