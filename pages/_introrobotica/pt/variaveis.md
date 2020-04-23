@@ -32,6 +32,7 @@ Estas "caixinhas" que guardamos na memória RAM se chamam **variáveis**. Cada v
 | long | número inteiro entre −2.147.483.647 e +2.147.483.647 | -354.124 |
 | float | número decimal | 3,14 |
 | char | caractere | A |
+| bool | valor verdadeiro ou falso | true |
 |-----------------+------------|
 
 Cada variável que criamos possui um **apelido**. Ele referencia a posição na memória onde a variável se encontra (ou, seguindo nossa analogia, onde está a caixinha dentro da maleta). A variável também precisa de um **valor**, que seria o conteúdo da caixinha (que deve estar de acordo com o tipo de dado que ela suporta).
@@ -56,6 +57,7 @@ int botao_1 = 5;
 long tempo = 0;
 char letra_a = 'A';
 float num_pi = 3.14;
+bool ceu_azul = true;
 ```
 
 E alguns exemplos de declarações **inválidas**:
@@ -66,6 +68,7 @@ int led 1 = 5; // apelidos não podem conter espaço
 int 9botao = 2; // apelidos não podem começar com números
 long void = 657; // apelidos não podem usar palavras reservadas
 char letra_a = A; // caracteres char devem estar entre aspas simples ('A')
+bool pato_real = verdadeiro; // variáveis booleanas só podem ser "true" (verdadeiro, ou 1) ou "false" (falso, ou 0)
 ```
 
 **Exercícios:**  
@@ -75,7 +78,7 @@ char letra_a = A; // caracteres char devem estar entre aspas simples ('A')
 **4a:** Declare um inteiro `int` com um apelido e valor válido  
 **5a:** Declare um float `float` com um apelido e valor válido  
 **6a:** Declare uma variável qualquer, com qualquer tipo, apelido e valor, válida  
-{:.info}
+{:.warning}
 
 ### Entendendo o computador
 
@@ -131,7 +134,6 @@ void setup() {
 
 Assim, teremos o resultado esperado:
 
-
 ```c
 // [codigo traduzido pelo arduino]
 int LED1 = 9;
@@ -148,7 +150,7 @@ void setup() {
 
 ### Operações com variáveis
 
-Toda variável pode, por padrão, ser alterada a qualquer momento da execução do programa, a não ser que seja declarada com o modificador `const`, como `const int joao = 13`.
+Toda variável pode, por padrão, ser alterada a qualquer momento durante a execução do programa, a não ser que seja declarada com o modificador `const`, como `const int joao = 13`.
 
 Logo, contanto que uma variável não possua esse modificador declarado, podemos fazer operações como adição, subtração, divisão, etc. E, após fazer estas modificações, alterar permanentemente o valor atribuido a ela. Por exemplo, se escrevermos:
 
@@ -165,6 +167,7 @@ void setup() {
 O código será interpretado como:
 
 ```c
+// [codigo traduzido pelo arduino]
 int joao = 9;
 
 void setup() {
@@ -174,4 +177,69 @@ void setup() {
 }
 ```
 
-Pois, mesmo tendo declarado inicialmente `joao = 9`, alteramos para `joao = 10` no meio do código. Chamadas subsequentes dessa variável irão ser traduzidas para o valor `10`, a não ser que outra chamada mude o valor de `joao`.
+Pois, mesmo tendo declarado inicialmente `joao = 9`, alteramos para `joao = 10` no meio do código. Chamadas subsequentes dessa variável irão ser traduzidas para o valor `10`, a não ser que outra chamada mude o valor de `joao`. Tendo entendido esta parte, podemos passar para operações entre variáveis. Leia e tente interpretar o resultado de cada operação:
+
+```c
+int a = 10;
+int b = 6;
+int c = 16;
+int d = 24;
+int e = 0;
+
+void setup() {
+    a = b;           // "a" fica igual a "b", ou seja, a == 6
+    b = c + d;       // "b" fica igual a "c + d", ou seja, "b = 16 + 24"
+    b = b - 4;       // "b" fica igual a "b - 24, ou seja, "b = 40 - 4"
+    // daqui pra frente, tente ir acompanhando os valores de cada variável
+    c = a - b;
+    d = a + b + c;
+    d = a + 10;
+    e = b / 6;
+}
+
+...
+```
+
+**Exercicio:**  
+Liste o valor final de cada variável do código acima depois de todas as operações.
+{:.warning}
+
+**Atenção:**  
+Antes de continuar, veja a página sobre o <a href="/introrobotica/pt/8ITcboj">protocolo serial</a> para entender como vamos ler as variáveis no computador.
+{:.error}
+
+Vamos checar se sua resposta está certa. Rode no TinkerCAD o seguinte código:
+
+```c
+int a = 10;
+int b = 6;
+int c = 16;
+int d = 24;
+int e = 0;
+
+void setup() {
+    Serial.begin(9600);
+    
+    a = b;           // "a" fica igual a "b", ou seja, a == 6
+    b = c + d;       // "b" fica igual a "c + d", ou seja, "b = 16 + 24"
+    b = b - 4;       // "b" fica igual a "b - 24, ou seja, "b = 40 - 4"
+    c = a - b;
+    d = a + b + c;
+    d = a + 10;
+    e = b / 6;
+  
+  	Serial.println(a);
+    Serial.println(b);
+    Serial.println(c);
+    Serial.println(d);
+    Serial.println(e);
+}
+
+void loop() {
+    // deixe aqui vazio
+}
+```
+
+**Exercicio:**  
+Experimente um pouco com outras operações, como multiplicação, divisão e ordem de operações.
+{:.warning}
