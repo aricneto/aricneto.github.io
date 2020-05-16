@@ -25,6 +25,10 @@ introrobotica:
     children:
       - title:  Variáveis
         url:    /introrobotica/pt/Qhd4hcr
+  - title:     Física
+    children:
+      - title:  Grandezas Elétricas
+        url:    /introrobotica/pt/j03JdPL
   #    - title:  Funções
   #      url:    /introrobotica/pt/R72gnVN
   #    - title:  Bibliotecas
