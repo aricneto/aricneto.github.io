@@ -10,8 +10,4 @@ sidebar:
 comments: true
 ---
 
-<iframe src="https://phet.colorado.edu/sims/html/circuit-construction-kit-dc/latest/circuit-construction-kit-dc_pt_BR.html" width="100%" height="600" scrolling="no" allowfullscreen></iframe>
-
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeW-U6zrSUcVAToWyMv6AYcxJmP-cGHanwDuIMVnL0xkaz52A/viewform?embedded=true" width="100%" height="1249" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
-
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTE-7btMQfRQF-7BuOn0w2yUodA92UIT9SyLyBPlBGILZZB0M2_VcMTu3FOFnWNO611tBxUaRhDhO7K/embed?start=false&loop=false&delayms=15000" frameborder="0" width="100%" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe width=550 height=440 src="https://www.edumedia-sciences.com/en/media/frame/552/?auth=fd94f62dc4db3a5c28c5fe2bdc1aee0d/24964" frameborder=0></iframe>
