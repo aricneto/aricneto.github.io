@@ -29,6 +29,8 @@ introrobotica:
     children:
       - title:  Grandezas Elétricas
         url:    /introrobotica/pt/j03JdPL
+      - title:  Potenciômetro
+        url:    /introrobotica/pt/m24PaKL
   #    - title:  Funções
   #      url:    /introrobotica/pt/R72gnVN
   #    - title:  Bibliotecas
