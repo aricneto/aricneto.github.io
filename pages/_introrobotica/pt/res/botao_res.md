@@ -15,16 +15,16 @@ comments: true
   <img class="image image--xl" src="https://i.imgur.com/OHv2FPv.png"/>
 </div>
 
-**1a:** Calcule o valor do resistor utilizando a lei de Ohm, supondo que a corrente que atravessa o LED é de 8mA.  
+**1a:** Calcule o valor do resistor utilizando a lei de Ohm, supondo que a corrente que atravessa o LED é de 20mA.  
 {:.warning}
 
 Um LED vermelho tipicamente possui uma queda de tensão de 2.0V.
 
 $$R = \frac{U}{i}$$
 
-$$R = \frac{3.0 - 2.0}{8 \times 10^{-3}}$$
+$$R = \frac{3.0 - 2.0}{20 \times 10^{-3}}$$
 
-$$R = 125Ω$$
+$$R = 50Ω$$
 
 **2a:** Mude a conexão do negativo da bateria para outros terminais do botão. O que acontece?  
 {:.warning}

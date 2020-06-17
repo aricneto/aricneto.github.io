@@ -45,7 +45,7 @@ Abrindo o TinkerCAD, monte este simples circuito:
 </div>
 
 **Exercicios:**  
-**1a:** Calcule o valor do resistor utilizando a lei de Ohm, supondo que a corrente que atravessa o LED é de 8mA.  
+**1a:** Calcule o valor do resistor utilizando a lei de Ohm, supondo que a corrente que atravessa o LED é de 20mA.  
 **2a:** Mude a conexão do negativo da bateria para outros terminais do botão. O que acontece?  
 **3a:** Compare a estrutura interna do botão, mostrada na parte teórica, com este exemplo. Por que este circuito funciona?
 {:.warning}
