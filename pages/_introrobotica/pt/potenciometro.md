@@ -78,7 +78,7 @@ Esta função irá ler uma variável (especificada no primeiro argumento) e, dad
 
 ## Atividades
 
-### Brilho do LED (Exemplo)
+### 1. Brilho do LED (Exemplo)
 
 Utilizando o circuito já pronto, disponível neste link do TinkerCAD: [tinkercad.com/things/5HafgpKMw2O](http://www.tinkercad.com/things/5HafgpKMw2O), programe o Arduino de forma que o potenciômetro controle o brilho do LED conectado ao pino 6, como mostra o vídeo abaixo:
 
@@ -104,7 +104,7 @@ void loop() {
 Antes de passar para o exercício seguinte, tente compreender o que cada linha de código está fazendo.
 
 
-### Barra de progresso
+### 2. Barra de progresso
 
 Utilizando o circuito já pronto, disponível neste link do TinkerCAD: [tinkercad.com/things/56Nia8Ukymf](http://www.tinkercad.com/things/56Nia8Ukymf), programe o Arduino de forma que o potenciômetro controle uma barra de progresso composta pelos LEDs conectados aos pinos 7, 6, 5 e 4, como mostra o vídeo abaixo:
 
