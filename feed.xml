@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.1.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" hreflang="en" /><updated>2020-06-18T12:50:10-03:00</updated><id>/feed.xml</id><title type="html">aricneto</title><subtitle>a small space for my thoughts and scribbles.
+</subtitle><author><name>aricneto</name></author><entry><title type="html">Twisty Timer 3.0.0b1 update!</title><link href="/twisty%20timer/update/2017/08/27/twisty-timer-update-300b1.html" rel="alternate" type="text/html" title="Twisty Timer 3.0.0b1 update!" /><published>2017-08-27T00:00:00-03:00</published><updated>2017-08-27T00:00:00-03:00</updated><id>/twisty%20timer/update/2017/08/27/twisty-timer-update-300b1</id><content type="html" xml:base="/twisty%20timer/update/2017/08/27/twisty-timer-update-300b1.html">&lt;p&gt;After almost 9 months of no updates, &lt;strong&gt;Twisty Timer&lt;/strong&gt; is back with a brand-new, out-of-the-blue update!&lt;/p&gt;
+
+&lt;p&gt;The main focus of this update was improving the layout of the two pages that needed it the most: Settings and Statistics. Along with it, we also added some small but very useful features, like inspection alerts for 8 and 12 seconds, average record highlights, and two new stats!&lt;br /&gt;
+I’ll break it down one by one so you can see what’s changed.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;h2 id=&quot;layout-improvements&quot;&gt;Layout improvements&lt;/h2&gt;
+
+&lt;h3 id=&quot;statistics-page&quot;&gt;Statistics page&lt;/h3&gt;
+
+&lt;p&gt;The previous statistics page was quite a mess. On high DPI devices, the text became too spaced out and small, making it very hard to read at a glance. On low DPI devices, it consumed almost the entire screen, obscuring the graph. In both cases, the unecessary padding, along with strings that, when localized, sometimes became too big and filled a third of the stats card, showed that the whole thing had to be redone.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Old&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;New&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;New&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;http://i.imgur.com/0sQQcCI.png&quot; alt=&quot;Old&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;http://i.imgur.com/LBocDW6.png&quot; alt=&quot;New (collapsed)&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;http://i.imgur.com/iHOZgdB.png?1&quot; alt=&quot;New (expanded)&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;On remaking the layout, I focused on three things: give the graph more space for users on portrait mode, omit redundant information, and make localization easier.&lt;br /&gt;
+As you can see, the graph is now much more prominent, and the table is clearer and easier to read, with different colors for each row so you are able to locate everything at a glance. The column captions became icons that, hopefully, should be clear enough to show what each table represents. Either way, you can long-press them to see the full captions.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;But why icons? Isn’t the table supposed to be clearer now? Won’t icons just add another layer of having to figure out what stuff means?&lt;/strong&gt;&lt;br /&gt;
+Yep. I really didn’t want to put the icons initially, but it’s the only way I found to keep the table layout the same regardless of localization. “Best” can easily fit within the small space available for column title, but you’ll have a hard time fitting “Najlepszy” (Polish for “Best”) on that space, specially in low-dpi devices.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Statistics have also been moved to three different “categories”: Improvement, Average, and Other.&lt;br /&gt;
+“Average”, as the name would suggest, shows all your averages. “Other” shows a mix of other useful statistics. “Improvement”, on the other hand, doesn’t have any unique statistics. It is simply a list of stats that I find best represent your speed: Deviation, Ao12, Ao50, Ao100, Best and Count. This list is very subjective, and I’m willing to change it depending on user feedback.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Why add that tab then? It doesn’t show anything new.&lt;/strong&gt;&lt;br /&gt;
+Whenever I see a Twisty Timer screenshot, 9 times out of 10 it is of the stats page. I know people like to see their stats all on one page, and I was afraid moving the stats card down to make space for the graph, and separating it in tabs would take some of the convenience of just being able to see it all. The improvements page is, at its heart, basically a “screenshot mode”. If you pull it up, you still have a clear view of the graph, along with what I think are the most relevant statistics (again, this is highly subjective).&lt;br /&gt;
+Anyway, tell me what you think. This is a beta anyway :)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Here you can also see the two new statistics: “Deviation” and “Total time”!&lt;br /&gt;
+&lt;strong&gt;Total time&lt;/strong&gt; shows you the sum of all your times in a given category, giving you a rough estimate of how much time you spent practicing.&lt;br /&gt;
+&lt;strong&gt;Deviation&lt;/strong&gt; shows you the Sample Standard Deviation of all your solves in a given category. That is, how much your times deviate from the mean. The lower it is, the more consistent you are.&lt;/p&gt;
+
+&lt;h3 id=&quot;settings-page&quot;&gt;Settings page&lt;/h3&gt;
+
+&lt;p&gt;By far the one that most needed a change. The old settings page was ugly and confusing. The settings were all scattered around and hard to find. For an app that focuses on customization, this is an issue that definitely needed to be fixed. To tackle it, I wrote all the existing preferences into a &lt;a href=&quot;http://i.imgur.com/0uJKuI7.png&quot;&gt;Trello table&lt;/a&gt;, and reorganized and regrouped them until I felt it flowed well. Applying them to the app afterwards was much easier, since I already knew where each piece would go.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Old&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;New&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;New&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;http://i.imgur.com/lrsy6Ys.png?1&quot; alt=&quot;Old&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;http://i.imgur.com/dQ7PXZs.png?1&quot; alt=&quot;New&quot; /&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;img src=&quot;http://i.imgur.com/fP7G2JN.png?1&quot; alt=&quot;New&quot; /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;new-features&quot;&gt;New features&lt;/h2&gt;
+
+&lt;h3 id=&quot;inspection-warning&quot;&gt;Inspection Warning&lt;/h3&gt;
+
+&lt;p class=&quot;success&quot;&gt;This feature was introduced by &lt;a href=&quot;https://github.com/aswna&quot;&gt;aswna&lt;/a&gt; on Github!&lt;/p&gt;
+
+&lt;p&gt;The timer can now alert you when your inspection time is running out! By default, it’ll alert you at the 8 and 12 seconds marks, but if you have a custom inspection time, it’ll automatically adjust to alert you when 50% and 80% of the time has passed.&lt;br /&gt;
+This feature is off by default. You must enable it by going to Settings -&amp;gt; Inspection behavior.&lt;/p&gt;
+
+&lt;h3 id=&quot;best-average-highlight&quot;&gt;Best average highlight&lt;/h3&gt;
+
+&lt;p class=&quot;success&quot;&gt;This feature was introduced by &lt;a href=&quot;https://github.com/druidalek&quot;&gt;druidalek&lt;/a&gt; on Github!&lt;/p&gt;
+
+&lt;p&gt;You’ll now be notified whenever you hit a personal best average when timing!&lt;br /&gt;
+&lt;img src=&quot;http://i.imgur.com/UBOdpNw.png?2&quot; alt=&quot;Average best&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;bug-fixes-and-minor-improvements&quot;&gt;Bug fixes and minor improvements&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Rotating the screen no longer resets the scramble
+    &lt;ul&gt;
+      &lt;li&gt;Thanks to &lt;a href=&quot;https://github.com/freundTech&quot;&gt;freundTech&lt;/a&gt; on Github&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Fixed an issue where layout would look wonky in devices with RTL languages&lt;/li&gt;
+  &lt;li&gt;Make app movable to SD card&lt;/li&gt;
+  &lt;li&gt;Fixed 4x4 and 5x5 showing BLD scrambles&lt;/li&gt;
+  &lt;li&gt;Fixed leftover inspection +2 bug&lt;/li&gt;
+  &lt;li&gt;Back button behaviour can now be toggled off in settings&lt;/li&gt;
+  &lt;li&gt;You can now choose which sides you want the cross hints to show.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;em&gt;Reports of my death have been greatly exaggerated.&lt;/em&gt;&lt;/p&gt;</content><author><name>aricneto</name></author><summary type="html">After almost 9 months of no updates, Twisty Timer is back with a brand-new, out-of-the-blue update! The main focus of this update was improving the layout of the two pages that needed it the most: Settings and Statistics. Along with it, we also added some small but very useful features, like inspection alerts for 8 and 12 seconds, average record highlights, and two new stats! I’ll break it down one by one so you can see what’s changed.</summary></entry></feed>
