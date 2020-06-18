@@ -241,5 +241,8 @@ void loop() {
 ```
 
 **Exercicio:**  
-Experimente um pouco com outras operações, como multiplicação, divisão e ordem de operações.
+Jeristrôncio e Joelma estão jogando um jogo de dados.  
+No início, um dado é jogado para determinar um numero de 0 a 6. Depois, cada jogador joga dois dados para receber um numero aleatório de 0 a 12, e compara sua pontuação com o colega. O jogador com a menor pontuação então tem metade do valor do dado jogado no início somado à sua pontuação total.  
+O jogador que possuir a maior pontuação depois dessa operação ganha o jogo.  
+Utilize o que você aprendeu do if, variáveis e do monitor serial, para criar um programa com três variáveis `float` com valores aleatórios: `inicio`, `jeristroncio` e `joelma`, e, dado as regras citadas acima, determinar quem ganhou o jogo, e escrever ao monitor serial a pontuação e o nome do ganhador.
 {:.warning}

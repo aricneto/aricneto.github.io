@@ -100,6 +100,68 @@ Então o comando `if` testa 10, o que sempre resulta `true`, já que qualquer n�
 Baseado no que você aprendeu sobre botões e o uso do “if”, desenvolva um circuito com um LED, um resistor e um botão. O LED só deverá acender se o botão for pressionado (estado HIGH). Para fazer esse desafio, você deverá usar o “if”.
 {:.warning}
 
+# Else
+
+O *else* é basicamente uma negação do *if*, mas pode **apenas** vir junto de uma condição *if*. O código do *else* apenas será executado caso a condição do *if* não seja verdadeira:
+
+```c
+if (condição) {
+  // executar código 1 caso condição seja verdade
+} else {
+  // executar código 2 caso condição não seja verdade
+}
+```
+
+# Else if
+
+O *else if* é uma extensão do *else*. Enquanto que o *else* é executado toda vez que a condição do *if* é falsa, o *else if* irá ser executado **apenas** quando a condição do *if* for falsa **e** a sua própria condição for verdadeira:
+
+```c
+if (condição A) {
+  // executar código 1 caso condição A seja verdade
+} else if (condição B) {
+  // executar código 2 caso condição A seja falsa, mas a condição B seja verdadeira
+}
+```
+
+O *else if* pode ser usado para criar uma cadeia de condições:
+
+```c
+if (condição A) {
+  // executar código 1 caso condição A seja verdade
+} else if (condição B) {
+  // executar código 2 caso condição A seja falsa, mas a condição B seja verdadeira
+} else if (condição C) {
+  // executar código 3 caso as condições A e B sejam falsas, mas a condição c seja verdadeira
+}
+```
+
+Um *else* simples pode ser adicionado ao final de uma cadeia de *else if*, para ser executado caso **nenhuma** das condições sejam verdadeiras:
+
+```c
+if (condição A) {
+  // executar código 1 caso condição A seja verdade
+} else if (condição B) {
+  // executar código 2 caso condição A seja falsa, mas a condição B seja verdadeira
+} else if (condição C) {
+  // executar código 3 caso as condições A e B sejam falsas, mas a condição c seja verdadeira
+} else {
+  // executar código 4 caso nenhuma das condições sejam verdadeiras
+}
+```
+
+# Condições E e OU
+
+Os operadores de comparação, mostrados na seção do *if* podem ser combinados com condições *e* e *ou* para gerar condições mais complexas.  
+Estas condições são representadas pelos símbolos `&&` (E), e `||` (OU). Com elas, podemos criar situações como:
+
+```c
+if (5 < 9 && 2 + 3 == 6) { // se 5 é menor que 9, E 2 + 3 é igual a 6
+  // executar código 1
+} else if (5 + 3 == 4 || 13 > 10) { // se 5 + 3 == 4, OU 13 é maior que 10
+  // executar código 2
+}
+```
 
 > **Referências:**
 >
