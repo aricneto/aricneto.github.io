@@ -9,6 +9,25 @@ sidebar:
   nav: introrobotica
 comments: true
 ---
+# Introdução
+
+Programa Ciência na Escola -
+Ensino de Ciências na Educação Básica
+
+Linha 2 – Ações de intervenção em escolas de educação básica com foco em ensino
+de ciências
+
+Página mantida para divulgação de material e atividades do projeto “A robótica como ferramenta motivadora para a área das ciências da natureza”
+{:.info}
+
+Ariovaldo Capuano Neto
+Diógenes Soares Moura
+Marta Fernanda de Araújo Bibiano
+
+<div align="center">
+  <img class="image image--xl" src="https://i.imgur.com/Zp3yxEf.png"/>
+</div>
+
 # Botões
 
 Se você está lendo isso, você provavelmente já apertou um botão para ligar o computador, ou para ligar o celular. Você ligou a luz do quarto, algum dia.
